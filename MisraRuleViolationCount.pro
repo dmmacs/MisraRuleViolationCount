@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core
+QT       += xml
 
 QT       -= gui
 
@@ -15,4 +16,10 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    XMLProcess.cpp \
+    ProcessArgs.cpp
+
+HEADERS += \
+    XMLProcess.h \
+    ProcessArgs.h
